@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // viết chương trình tạo hàm để kiểm tra xem ký tự nhập vào có phải ký tự số hay không?
+        // isNaN();
+        function notANumber(x) {
+            return x >= 0 || x < 0;
+        }
+        function isANumber(string) {
+            // if(Object.is(n,NaN)){
+            //     return true;
+            // }else{
+            //     return false;
+            // }
+            return !Object.is(parseInt(string), NaN);//hàm so sánh
+        }
+        console.log(notANumber(4857.2983));
+        console.log(notANumber("34"));
+    </script>
+</body>
+
+</html>

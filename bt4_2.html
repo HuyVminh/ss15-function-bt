@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Viết hàm kiểm tra xem số người dùng nhập vào có phải là số nguyên tố hay không ?
+
+        let n = prompt("Nhập 1 số nguyên bất kỳ");
+        function element(x) {
+            let check = false;
+            for (let i = 2; i < x; i++) {
+                if (x % i == 0) {
+                    check = true;
+                    break;
+                }
+            }
+            if (check == true) {
+                return `số ${x} không phải là số nguyên tố`;
+            } else {
+                return `số ${x} là số nguyên tố`;
+            }
+        }
+        console.log(element(n));
+    </script>
+</body>
+
+</html>

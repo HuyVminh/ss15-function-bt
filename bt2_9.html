@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, 
+        // kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+        // Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về - 1.
+        let str = prompt("Nhập vào mảng số nguyên bất kỳ cách nhau bởi dấu ','");
+        str = str.split(",");
+        let n = prompt("Nhập vào 1 ký tự bất kỳ");
+        function findWord(arr, x) {
+            let count = 0;
+            let check = false;
+            for (let i = 0; i < arr.length; i++) {
+                if (x == arr[i]) {
+                    check = true;
+                    count++;
+                }
+            }
+            if (check == false) {
+                count = -1;
+            }
+            return count;
+        }
+        console.log(findWord(str, n));
+    </script>
+</body>
+
+</html>

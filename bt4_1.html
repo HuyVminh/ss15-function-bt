@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Viết chương trình cho người dùng nhập vào 3 số, 
+        // viết hàm kiểm tra để tìm ra số bé nhất và in ra số đó
+
+        let a = +prompt("Nhập số thứ nhất");
+        let b = +prompt("Nhập số thứ hai");
+        let c = +prompt("Nhập số thứ ba");
+        function minNumber(x, y, z) {
+            let min;
+            if (x < y && x < z) {
+                return "Số nhỏ nhất là" + x;
+            } else if (y < x && y < z) {
+                return "Số nhỏ nhất là" + y;
+            } else {
+                return "Số nhỏ nhất là" + z;
+            }
+        }
+        console.log(minNumber(a, b, c));
+    </script>
+</body>
+
+</html>
